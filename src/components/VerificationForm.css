@@ -1,0 +1,19 @@
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #373747;
+    margin: 0;
+}
+
+.validation {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-self: stretch;
+}
+
+p.get-started {
+    color: #5C6269;
+    font-size: 16px;
+    margin: 0;
+}

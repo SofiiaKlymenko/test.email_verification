@@ -1,0 +1,38 @@
+.app {
+  background-color: #F5F7FA;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.app:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 10%;
+  top: 17%;
+  background-color: rgba(249, 215, 175, 0.7);
+  width: 800px;
+  height: 320px;
+  border-radius: 70%;
+  z-index: 1;
+  filter: blur(100px);
+}
+
+.app:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 23%;
+  top: 43%;
+  background-color: rgba(146, 149, 226, 0.7);
+  width: 800px;
+  height: 320px;
+  border-radius: 70%;
+  z-index: 1;
+  filter: blur(100px);
+}
