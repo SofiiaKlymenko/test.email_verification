@@ -53,7 +53,7 @@ export const VerificationForm = () => {
               name="email"
               placeholder="example@mail.com"
               pattern={{
-                value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
+                value: /^([a-zA-Z0-9_\-.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/,
                 message: "Looks like it’s not an email. Check it.",
               }}
             />
@@ -64,7 +64,7 @@ export const VerificationForm = () => {
               placeholder="https://"
               validate={{
                 security: (value) => /^https:\/\//.test(value),
-                validity: (value) => /^https:\/\/[^\s/$.?#]+\.[^\s]+$/.test(value),
+                validity: (value) => /^(http(s):\/\/.)[-a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)$/.test(value),
               }}
               errorMessage={
                 errors.url && errors.url.type === "security"
